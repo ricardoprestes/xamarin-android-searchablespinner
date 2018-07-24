@@ -31,6 +31,7 @@ namespace SearchableSpinner.Droid.Sample
             }
 
             SpnTest = FindViewById<SpinnerSearch>(Resource.Id.spnTest);
+            SpnTest.SpinnerTitle = "Selecione Um Item";
             SpnTest.SetItems(items, -1, null);
 
 		}

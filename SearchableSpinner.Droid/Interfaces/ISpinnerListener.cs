@@ -5,6 +5,6 @@ namespace SearchableSpinner.Droid.Interfaces
 {
     public interface ISpinnerListener
     {
-        void OnItemsSelected(List<SpinnerItem> items);
+        void OnItemSelected(SpinnerItem item);
     }
 }

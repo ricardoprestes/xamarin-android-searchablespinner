@@ -2508,17 +2508,20 @@ namespace SearchableSpinner.Droid
 			// aapt resource value: 0x7f070010
 			public static int abc_toolbar_collapse_description = 2131165200;
 			
-			// aapt resource value: 0x7f070020
-			public static int app_name = 2131165216;
-			
 			// aapt resource value: 0x7f07001f
-			public static int hello = 2131165215;
+			public static int app_name = 2131165215;
 			
 			// aapt resource value: 0x7f070011
 			public static int search_menu_title = 2131165201;
 			
 			// aapt resource value: 0x7f07001e
 			public static int status_bar_notification_info_overflow = 2131165214;
+			
+			// aapt resource value: 0x7f070020
+			public static int text_nome = 2131165216;
+			
+			// aapt resource value: 0x7f070021
+			public static int text_search_hint = 2131165217;
 			
 			static String()
 			{

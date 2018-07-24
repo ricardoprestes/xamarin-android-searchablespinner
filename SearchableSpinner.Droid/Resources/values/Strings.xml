@@ -1,4 +1,5 @@
 <resources>
-    <string name="hello">Hello World, Click Me!</string>
-    <string name="app_name">SearchableSpinner.Droid</string>
+    <string name="app_name">SearchableSpinner</string>
+    <string name="text_nome">No Selected Item</string>
+    <string name="text_search_hint">Search</string>
 </resources>

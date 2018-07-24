@@ -1,0 +1,4 @@
+<resources>
+    <string name="text_nome">Ningún Artículo Seleccionado</string>
+    <string name="text_search_hint">Buscar</string>
+</resources>

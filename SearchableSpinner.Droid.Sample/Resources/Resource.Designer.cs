@@ -815,9 +815,10 @@ namespace SearchableSpinner.Droid.Sample
 			global::SearchableSpinner.Droid.Resource.String.abc_shareactionprovider_share_with_application = global::SearchableSpinner.Droid.Sample.Resource.String.abc_shareactionprovider_share_with_application;
 			global::SearchableSpinner.Droid.Resource.String.abc_toolbar_collapse_description = global::SearchableSpinner.Droid.Sample.Resource.String.abc_toolbar_collapse_description;
 			global::SearchableSpinner.Droid.Resource.String.app_name = global::SearchableSpinner.Droid.Sample.Resource.String.app_name;
-			global::SearchableSpinner.Droid.Resource.String.hello = global::SearchableSpinner.Droid.Sample.Resource.String.hello;
 			global::SearchableSpinner.Droid.Resource.String.search_menu_title = global::SearchableSpinner.Droid.Sample.Resource.String.search_menu_title;
 			global::SearchableSpinner.Droid.Resource.String.status_bar_notification_info_overflow = global::SearchableSpinner.Droid.Sample.Resource.String.status_bar_notification_info_overflow;
+			global::SearchableSpinner.Droid.Resource.String.text_nome = global::SearchableSpinner.Droid.Sample.Resource.String.text_nome;
+			global::SearchableSpinner.Droid.Resource.String.text_search_hint = global::SearchableSpinner.Droid.Sample.Resource.String.text_search_hint;
 			global::SearchableSpinner.Droid.Resource.Style.AlertDialog_AppCompat = global::SearchableSpinner.Droid.Sample.Resource.Style.AlertDialog_AppCompat;
 			global::SearchableSpinner.Droid.Resource.Style.AlertDialog_AppCompat_Light = global::SearchableSpinner.Droid.Sample.Resource.Style.AlertDialog_AppCompat_Light;
 			global::SearchableSpinner.Droid.Resource.Style.Animation_AppCompat_Dialog = global::SearchableSpinner.Droid.Sample.Resource.Style.Animation_AppCompat_Dialog;
@@ -4815,11 +4816,11 @@ namespace SearchableSpinner.Droid.Sample
 			// aapt resource value: 0x7f090010
 			public const int abc_toolbar_collapse_description = 2131296272;
 			
-			// aapt resource value: 0x7f090029
-			public const int action_settings = 2131296297;
+			// aapt resource value: 0x7f09002a
+			public const int action_settings = 2131296298;
 			
-			// aapt resource value: 0x7f090028
-			public const int app_name = 2131296296;
+			// aapt resource value: 0x7f090027
+			public const int app_name = 2131296295;
 			
 			// aapt resource value: 0x7f09001e
 			public const int appbar_scrolling_view_behavior = 2131296286;
@@ -4829,9 +4830,6 @@ namespace SearchableSpinner.Droid.Sample
 			
 			// aapt resource value: 0x7f090020
 			public const int character_counter_pattern = 2131296288;
-			
-			// aapt resource value: 0x7f090027
-			public const int hello = 2131296295;
 			
 			// aapt resource value: 0x7f090021
 			public const int password_toggle_content_description = 2131296289;
@@ -4853,6 +4851,12 @@ namespace SearchableSpinner.Droid.Sample
 			
 			// aapt resource value: 0x7f090026
 			public const int status_bar_notification_info_overflow = 2131296294;
+			
+			// aapt resource value: 0x7f090028
+			public const int text_nome = 2131296296;
+			
+			// aapt resource value: 0x7f090029
+			public const int text_search_hint = 2131296297;
 			
 			static String()
 			{

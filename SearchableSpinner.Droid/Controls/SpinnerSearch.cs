@@ -17,11 +17,10 @@ namespace SearchableSpinner.Droid.Controls
     public class SpinnerSearch : AppCompatSpinner, IDialogInterfaceOnCancelListener, IDialogInterfaceOnClickListener
     {
         List<SpinnerItem> Items;
-        string DefaultText = "None";
-        string SpinnerTitle { get; set; }
+        string DefaultText { get; set; }
+        public string SpinnerTitle { get; set; }
         private ISpinnerListener Listener;
         ItemAdapter ItemAdapter { get; set; }
-
         public static AlertDialog.Builder Builder;
         public static AlertDialog Dialog;
 
@@ -30,10 +29,12 @@ namespace SearchableSpinner.Droid.Controls
 
         public SpinnerSearch(Context context) : base(context)
         {
+            DefaultText = Context.GetString(Resource.String.text_nome);
         }
 
         public SpinnerSearch(Context context, IAttributeSet attrs) : base(context, attrs)
         {
+            DefaultText = Context.GetString(Resource.String.text_nome);
         }
 
         public SpinnerItem GetSelectedItem()
@@ -55,11 +56,12 @@ namespace SearchableSpinner.Droid.Controls
             if (ItemAdapter != null)
                 ItemAdapter.NotifyDataSetChanged();
 
-            Listener?.OnItemsSelected(Items);
+            Listener?.OnItemSelected(Items.FirstOrDefault(i => i.IsSelected));
         }
 
         public override bool PerformClick()
         {
+            DefaultText = Context.GetString(Resource.String.text_nome);
             Builder = new AlertDialog.Builder(Context);
             Builder.SetTitle(SpinnerTitle);
 
@@ -70,6 +72,7 @@ namespace SearchableSpinner.Droid.Controls
 
             EmptyText = (TextView)view.FindViewById(Resource.Id.txvEmpty);
             SearchView = view.FindViewById<Android.Widget.SearchView>(Resource.Id.searchText);
+            SearchView.SetQueryHint(Context.GetString(Resource.String.text_search_hint));
 
             var listView = view.FindViewById<RecyclerView>(Resource.Id.rvItems);
             ItemAdapter = new ItemAdapter(Context, Items, this, EmptyText);
