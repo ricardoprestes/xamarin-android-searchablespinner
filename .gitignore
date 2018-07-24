@@ -3,3 +3,9 @@
 ################################################################################
 
 /.vs/SearchableSpinner
+/SearchableSpinner.Droid/bin/Debug
+/SearchableSpinner.Droid/obj
+/SearchableSpinner.Droid/SearchableSpinner.Droid.csproj.user
+/SearchableSpinner.Droid.Sample/bin/Debug
+/SearchableSpinner.Droid.Sample/obj
+/SearchableSpinner.Droid.Sample/SearchableSpinner.Droid.Sample.csproj.user
