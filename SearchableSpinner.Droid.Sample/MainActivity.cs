@@ -14,6 +14,7 @@ namespace SearchableSpinner.Droid.Sample
 	public class MainActivity : AppCompatActivity
     {
         public SpinnerSearch SpnTest { get; set; }
+        public MultiSpinnerSearch SpnMultiTest { get; set; }
 
         protected override void OnCreate(Bundle savedInstanceState)
 		{
@@ -34,7 +35,16 @@ namespace SearchableSpinner.Droid.Sample
             SpnTest.SpinnerTitle = "Selecione Um Item";
             SpnTest.SetItems(items, -1, null);
 
-		}
+            var items2 = new List<SpinnerItem>();
+            for (int i = 0; i < 30; i++)
+            {
+                items2.Add(new SpinnerItem { Id = i, Name = "Item " + i });
+            }
+            SpnMultiTest = FindViewById<MultiSpinnerSearch>(Resource.Id.spnMultTest);
+            SpnMultiTest.SpinnerTitle = "Selecione";
+            SpnMultiTest.SetItems(items2, null);
+
+        }
 
 		public override bool OnCreateOptionsMenu(IMenu menu)
         {

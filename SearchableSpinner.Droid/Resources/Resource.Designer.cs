@@ -1860,8 +1860,8 @@ namespace SearchableSpinner.Droid
 			// aapt resource value: 0x7f06002a
 			public static int SYM = 2131099690;
 			
-			// aapt resource value: 0x7f06006e
-			public static int action0 = 2131099758;
+			// aapt resource value: 0x7f06006f
+			public static int action0 = 2131099759;
 			
 			// aapt resource value: 0x7f060058
 			public static int action_bar = 2131099736;
@@ -1884,17 +1884,17 @@ namespace SearchableSpinner.Droid
 			// aapt resource value: 0x7f060036
 			public static int action_bar_title = 2131099702;
 			
-			// aapt resource value: 0x7f06006b
-			public static int action_container = 2131099755;
+			// aapt resource value: 0x7f06006c
+			public static int action_container = 2131099756;
 			
 			// aapt resource value: 0x7f060059
 			public static int action_context_bar = 2131099737;
 			
-			// aapt resource value: 0x7f060072
-			public static int action_divider = 2131099762;
+			// aapt resource value: 0x7f060073
+			public static int action_divider = 2131099763;
 			
-			// aapt resource value: 0x7f06006c
-			public static int action_image = 2131099756;
+			// aapt resource value: 0x7f06006d
+			public static int action_image = 2131099757;
 			
 			// aapt resource value: 0x7f060003
 			public static int action_menu_divider = 2131099651;
@@ -1911,11 +1911,11 @@ namespace SearchableSpinner.Droid
 			// aapt resource value: 0x7f060038
 			public static int action_mode_close_button = 2131099704;
 			
-			// aapt resource value: 0x7f06006d
-			public static int action_text = 2131099757;
+			// aapt resource value: 0x7f06006e
+			public static int action_text = 2131099758;
 			
-			// aapt resource value: 0x7f06007b
-			public static int actions = 2131099771;
+			// aapt resource value: 0x7f06007c
+			public static int actions = 2131099772;
 			
 			// aapt resource value: 0x7f060039
 			public static int activity_chooser_view_content = 2131099705;
@@ -1944,14 +1944,17 @@ namespace SearchableSpinner.Droid
 			// aapt resource value: 0x7f06003f
 			public static int buttonPanel = 2131099711;
 			
-			// aapt resource value: 0x7f06006f
-			public static int cancel_action = 2131099759;
+			// aapt resource value: 0x7f060070
+			public static int cancel_action = 2131099760;
 			
 			// aapt resource value: 0x7f06004f
 			public static int checkbox = 2131099727;
 			
-			// aapt resource value: 0x7f060077
-			public static int chronometer = 2131099767;
+			// aapt resource value: 0x7f06006b
+			public static int chkItemChecked = 2131099755;
+			
+			// aapt resource value: 0x7f060078
+			public static int chronometer = 2131099768;
 			
 			// aapt resource value: 0x7f06002c
 			public static int collapseActionView = 2131099692;
@@ -1980,8 +1983,8 @@ namespace SearchableSpinner.Droid
 			// aapt resource value: 0x7f060023
 			public static int end = 2131099683;
 			
-			// aapt resource value: 0x7f06007d
-			public static int end_padder = 2131099773;
+			// aapt resource value: 0x7f06007e
+			public static int end_padder = 2131099774;
 			
 			// aapt resource value: 0x7f06003a
 			public static int expand_activities_button = 2131099706;
@@ -2001,8 +2004,8 @@ namespace SearchableSpinner.Droid
 			// aapt resource value: 0x7f06003e
 			public static int icon = 2131099710;
 			
-			// aapt resource value: 0x7f06007c
-			public static int icon_group = 2131099772;
+			// aapt resource value: 0x7f06007d
+			public static int icon_group = 2131099773;
 			
 			// aapt resource value: 0x7f06002d
 			public static int ifRoom = 2131099693;
@@ -2010,8 +2013,8 @@ namespace SearchableSpinner.Droid
 			// aapt resource value: 0x7f06003b
 			public static int image = 2131099707;
 			
-			// aapt resource value: 0x7f060078
-			public static int info = 2131099768;
+			// aapt resource value: 0x7f060079
+			public static int info = 2131099769;
 			
 			// aapt resource value: 0x7f060035
 			public static int italic = 2131099701;
@@ -2031,11 +2034,11 @@ namespace SearchableSpinner.Droid
 			// aapt resource value: 0x7f06003d
 			public static int list_item = 2131099709;
 			
-			// aapt resource value: 0x7f060071
-			public static int media_actions = 2131099761;
+			// aapt resource value: 0x7f060072
+			public static int media_actions = 2131099762;
 			
-			// aapt resource value: 0x7f06007e
-			public static int message = 2131099774;
+			// aapt resource value: 0x7f06007f
+			public static int message = 2131099775;
 			
 			// aapt resource value: 0x7f060024
 			public static int middle = 2131099684;
@@ -2052,14 +2055,14 @@ namespace SearchableSpinner.Droid
 			// aapt resource value: 0x7f060011
 			public static int normal = 2131099665;
 			
-			// aapt resource value: 0x7f06007a
-			public static int notification_background = 2131099770;
+			// aapt resource value: 0x7f06007b
+			public static int notification_background = 2131099771;
+			
+			// aapt resource value: 0x7f060075
+			public static int notification_main_column = 2131099765;
 			
 			// aapt resource value: 0x7f060074
-			public static int notification_main_column = 2131099764;
-			
-			// aapt resource value: 0x7f060073
-			public static int notification_main_column_container = 2131099763;
+			public static int notification_main_column_container = 2131099764;
 			
 			// aapt resource value: 0x7f060041
 			public static int parentPanel = 2131099713;
@@ -2073,11 +2076,11 @@ namespace SearchableSpinner.Droid
 			// aapt resource value: 0x7f060051
 			public static int radio = 2131099729;
 			
-			// aapt resource value: 0x7f060079
-			public static int right_icon = 2131099769;
+			// aapt resource value: 0x7f06007a
+			public static int right_icon = 2131099770;
 			
-			// aapt resource value: 0x7f060075
-			public static int right_side = 2131099765;
+			// aapt resource value: 0x7f060076
+			public static int right_side = 2131099766;
 			
 			// aapt resource value: 0x7f060068
 			public static int rvItems = 2131099752;
@@ -2157,8 +2160,8 @@ namespace SearchableSpinner.Droid
 			// aapt resource value: 0x7f06001f
 			public static int src_over = 2131099679;
 			
-			// aapt resource value: 0x7f060070
-			public static int status_bar_latest_event_content = 2131099760;
+			// aapt resource value: 0x7f060071
+			public static int status_bar_latest_event_content = 2131099761;
 			
 			// aapt resource value: 0x7f060052
 			public static int submenuarrow = 2131099730;
@@ -2184,8 +2187,8 @@ namespace SearchableSpinner.Droid
 			// aapt resource value: 0x7f060045
 			public static int textSpacerNoTitle = 2131099717;
 			
-			// aapt resource value: 0x7f060076
-			public static int time = 2131099766;
+			// aapt resource value: 0x7f060077
+			public static int time = 2131099767;
 			
 			// aapt resource value: 0x7f06000f
 			public static int title = 2131099663;
@@ -2346,67 +2349,70 @@ namespace SearchableSpinner.Droid
 			public static int dialog_recyclerview_search = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public static int item_select_single = 2130903067;
+			public static int item_select_multiple = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public static int notification_action = 2130903068;
+			public static int item_select_single = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public static int notification_action_tombstone = 2130903069;
+			public static int notification_action = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public static int notification_media_action = 2130903070;
+			public static int notification_action_tombstone = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public static int notification_media_cancel_action = 2130903071;
+			public static int notification_media_action = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public static int notification_template_big_media = 2130903072;
+			public static int notification_media_cancel_action = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public static int notification_template_big_media_custom = 2130903073;
+			public static int notification_template_big_media = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public static int notification_template_big_media_narrow = 2130903074;
+			public static int notification_template_big_media_custom = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public static int notification_template_big_media_narrow_custom = 2130903075;
+			public static int notification_template_big_media_narrow = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public static int notification_template_custom_big = 2130903076;
+			public static int notification_template_big_media_narrow_custom = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public static int notification_template_icon_group = 2130903077;
+			public static int notification_template_custom_big = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public static int notification_template_lines_media = 2130903078;
+			public static int notification_template_icon_group = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public static int notification_template_media = 2130903079;
+			public static int notification_template_lines_media = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public static int notification_template_media_custom = 2130903080;
+			public static int notification_template_media = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public static int notification_template_part_chronometer = 2130903081;
+			public static int notification_template_media_custom = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public static int notification_template_part_time = 2130903082;
+			public static int notification_template_part_chronometer = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public static int select_dialog_item_material = 2130903083;
+			public static int notification_template_part_time = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public static int select_dialog_multichoice_material = 2130903084;
+			public static int select_dialog_item_material = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public static int select_dialog_singlechoice_material = 2130903085;
+			public static int select_dialog_multichoice_material = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public static int support_simple_spinner_dropdown_item = 2130903086;
+			public static int select_dialog_singlechoice_material = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public static int tooltip = 2130903087;
+			public static int support_simple_spinner_dropdown_item = 2130903087;
+			
+			// aapt resource value: 0x7f030030
+			public static int tooltip = 2130903088;
 			
 			static Layout()
 			{

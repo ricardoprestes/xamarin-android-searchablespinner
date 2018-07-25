@@ -1,9 +1,8 @@
 ﻿using SearchableSpinner.Droid.Controls;
-using System.Collections.Generic;
 
 namespace SearchableSpinner.Droid.Interfaces
 {
-    public interface ISpinnerListener
+    public interface ISearchableSpinnerListener
     {
         void OnItemSelected(SpinnerItem item);
     }
