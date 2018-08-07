@@ -1,8 +1,5 @@
-﻿using System;
-using Android.App;
-using Android.Widget;
+﻿using Android.App;
 using Android.OS;
-using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
 using SearchableSpinner.Droid.Controls;
@@ -10,7 +7,7 @@ using System.Collections.Generic;
 
 namespace SearchableSpinner.Droid.Sample
 {
-	[Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
 	public class MainActivity : AppCompatActivity
     {
         public SpinnerSearch SpnTest { get; set; }

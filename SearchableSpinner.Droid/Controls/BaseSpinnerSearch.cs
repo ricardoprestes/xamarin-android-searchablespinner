@@ -5,6 +5,7 @@ using Android.Support.V7.Widget;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -107,32 +108,13 @@ namespace SearchableSpinner.Droid.Controls
                 else
                     holder.TextView.SetTypeface(null, TypefaceStyle.Normal);
             }
-
-            holder.ItemView.Click += (s, e) =>
-            {
-                if (IsMultiSelect)
-                {
-                    Items[position].IsSelected = !Items[position].IsSelected;
-                    holder.CheckBox.Checked = Items[position].IsSelected;
-                }
-                else
-                {
-                    for (int i = 0; i < Items.Count; i++)
-                    {
-                        Items[i].IsSelected = i == position;
-                    }
-                    BaseSpinnerSearch.Dialog.Dismiss();
-                    Spinner.OnCancel(BaseSpinnerSearch.Dialog);
-                }
-            };
-
         }
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             var layout = IsMultiSelect ? Resource.Layout.item_select_multiple : Resource.Layout.item_select_single;
             View itemView = LayoutInflater.From(parent.Context).Inflate(layout, parent, false);
-            var vh = new SpinnerItemViewHolder(itemView);
+            var vh = new SpinnerItemViewHolder(itemView, OnClick);
             return vh;
         }
 
@@ -145,7 +127,25 @@ namespace SearchableSpinner.Droid.Controls
             NotifyItemRangeRemoved(0, count);
             NotifyItemRangeInserted(0, Items.Count);
         }
+        void OnClick(AdapterClickEventArgs args)
+        {
+            if (IsMultiSelect)
+            {
+                Items[args.Position].IsSelected = !Items[args.Position].IsSelected;
+                NotifyItemChanged(args.Position);
+            }
+            else
+            {
+                for (int i = 0; i < OriginalValues.Count; i++)
+                {
+                    OriginalValues[i].IsSelected = false;
+                }
 
+                Items[args.Position].IsSelected = true;
+                BaseSpinnerSearch.Dialog.Dismiss();
+                Spinner.OnCancel(BaseSpinnerSearch.Dialog);
+            }
+        }
     }
 
     class SpinnerItemViewHolder : RecyclerView.ViewHolder
@@ -153,10 +153,17 @@ namespace SearchableSpinner.Droid.Controls
         public TextView TextView { get; set; }
         public CheckBox CheckBox { get; set; }
 
-        public SpinnerItemViewHolder(View itemView) : base(itemView)
+        public SpinnerItemViewHolder(View itemView, Action<AdapterClickEventArgs> clickListener) : base(itemView)
         {
             TextView = itemView.FindViewById<TextView>(Resource.Id.txvItem);
             CheckBox = itemView.FindViewById<CheckBox>(Resource.Id.chkItemChecked);
+            itemView.Click += (sender, e) => clickListener(new AdapterClickEventArgs { View = itemView, Position = AdapterPosition });
         }
+    }
+
+    public class AdapterClickEventArgs : EventArgs
+    {
+        public View View { get; set; }
+        public int Position { get; set; }
     }
 }

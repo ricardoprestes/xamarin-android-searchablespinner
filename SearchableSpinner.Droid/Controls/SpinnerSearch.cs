@@ -28,10 +28,7 @@ namespace SearchableSpinner.Droid.Controls
             DefaultText = Context.GetString(Resource.String.text_nome);
         }
 
-        public SpinnerItem GetSelectedItem()
-        {
-            return Items.FirstOrDefault(i => i.IsSelected);
-        }
+        public SpinnerItem GetSelectedItem() => Items.FirstOrDefault(i => i.IsSelected);
 
         public override void OnCancel(IDialogInterface dialog)
         {
