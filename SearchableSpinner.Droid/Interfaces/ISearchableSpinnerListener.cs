@@ -1,9 +1,10 @@
-﻿using SearchableSpinner.Droid.Controls;
+﻿using Android.Views;
+using SearchableSpinner.Droid.Controls;
 
 namespace SearchableSpinner.Droid.Interfaces
 {
     public interface ISearchableSpinnerListener
     {
-        void OnItemSelected(SpinnerItem item);
+        void OnItemSelected(View view, SpinnerItem item);
     }
 }

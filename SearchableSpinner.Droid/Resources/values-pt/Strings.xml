@@ -1,4 +1,5 @@
 <resources>
     <string name="text_nome">Nenhum Item Selecionado</string>
     <string name="text_search_hint">Buscar</string>
+    <string name="text_not_found">Não encontrado</string>
 </resources>

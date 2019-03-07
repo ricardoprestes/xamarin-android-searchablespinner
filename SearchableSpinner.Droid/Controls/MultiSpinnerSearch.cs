@@ -43,7 +43,7 @@ namespace SearchableSpinner.Droid.Controls
             if (ItemAdapter != null)
                 ItemAdapter.NotifyDataSetChanged();
 
-            Listener?.OnItemsSelected(GetSelectedItems());
+            Listener?.OnItemsSelected(this, GetSelectedItems());
         }
 
         public void SetItems(List<SpinnerItem> items, IMultiSearchableSpinnerListener listener)
@@ -66,6 +66,15 @@ namespace SearchableSpinner.Droid.Controls
 
             ArrayAdapter<string> adapterSpinner = new ArrayAdapter<string>(Context, Resource.Layout.item_select_single, Resource.Id.txvItem, new string[] { DefaultText });
             SetAdapter(adapterSpinner);
+        }
+
+        public void SetSelecteds(List<int> positions)
+        {
+            foreach (var position in positions)
+            {
+                Items[position].IsSelected = true;
+            }
+            OnCancel(null);
         }
     }
 }

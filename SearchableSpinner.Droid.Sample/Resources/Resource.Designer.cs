@@ -820,6 +820,7 @@ namespace SearchableSpinner.Droid.Sample
 			global::SearchableSpinner.Droid.Resource.String.search_menu_title = global::SearchableSpinner.Droid.Sample.Resource.String.search_menu_title;
 			global::SearchableSpinner.Droid.Resource.String.status_bar_notification_info_overflow = global::SearchableSpinner.Droid.Sample.Resource.String.status_bar_notification_info_overflow;
 			global::SearchableSpinner.Droid.Resource.String.text_nome = global::SearchableSpinner.Droid.Sample.Resource.String.text_nome;
+			global::SearchableSpinner.Droid.Resource.String.text_not_found = global::SearchableSpinner.Droid.Sample.Resource.String.text_not_found;
 			global::SearchableSpinner.Droid.Resource.String.text_search_hint = global::SearchableSpinner.Droid.Sample.Resource.String.text_search_hint;
 			global::SearchableSpinner.Droid.Resource.Style.AlertDialog_AppCompat = global::SearchableSpinner.Droid.Sample.Resource.Style.AlertDialog_AppCompat;
 			global::SearchableSpinner.Droid.Resource.Style.AlertDialog_AppCompat_Light = global::SearchableSpinner.Droid.Sample.Resource.Style.AlertDialog_AppCompat_Light;
@@ -4827,8 +4828,8 @@ namespace SearchableSpinner.Droid.Sample
 			// aapt resource value: 0x7f090010
 			public const int abc_toolbar_collapse_description = 2131296272;
 			
-			// aapt resource value: 0x7f09002a
-			public const int action_settings = 2131296298;
+			// aapt resource value: 0x7f09002b
+			public const int action_settings = 2131296299;
 			
 			// aapt resource value: 0x7f090027
 			public const int app_name = 2131296295;
@@ -4865,6 +4866,9 @@ namespace SearchableSpinner.Droid.Sample
 			
 			// aapt resource value: 0x7f090028
 			public const int text_nome = 2131296296;
+			
+			// aapt resource value: 0x7f09002a
+			public const int text_not_found = 2131296298;
 			
 			// aapt resource value: 0x7f090029
 			public const int text_search_hint = 2131296297;

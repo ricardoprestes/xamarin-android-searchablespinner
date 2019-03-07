@@ -2,4 +2,5 @@
     <string name="app_name">SearchableSpinner</string>
     <string name="text_nome">No Selected Item</string>
     <string name="text_search_hint">Search</string>
+    <string name="text_not_found">Not found</string>
 </resources>

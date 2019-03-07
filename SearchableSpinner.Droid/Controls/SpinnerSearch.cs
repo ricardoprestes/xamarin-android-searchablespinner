@@ -44,7 +44,7 @@ namespace SearchableSpinner.Droid.Controls
             if (ItemAdapter != null)
                 ItemAdapter.NotifyDataSetChanged();
 
-            Listener?.OnItemSelected(Items.FirstOrDefault(i => i.IsSelected));
+            Listener?.OnItemSelected(this, Items.FirstOrDefault(i => i.IsSelected));
         }
 
         public void SetItems(List<SpinnerItem> items, int position, ISearchableSpinnerListener listener)
@@ -68,6 +68,15 @@ namespace SearchableSpinner.Droid.Controls
             if (position != -1)
             {
                 items[position].IsSelected = true;
+                OnCancel(null);
+            }
+        }
+
+        public void SetSelected(int position)
+        {
+            if (position != -1)
+            {
+                Items[position].IsSelected = true;
                 OnCancel(null);
             }
         }

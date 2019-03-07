@@ -9,3 +9,7 @@
 /SearchableSpinner.Droid.Sample/bin/Debug
 /SearchableSpinner.Droid.Sample/obj
 /SearchableSpinner.Droid.Sample/SearchableSpinner.Droid.Sample.csproj.user
+/.vs/xamarin-android-searchablespinner/v15
+/SearchableSpinner.Droid/bin/Release
+/SearchableSpinner.Droid.Sample/bin/Release
+/.vs

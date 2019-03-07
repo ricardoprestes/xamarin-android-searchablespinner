@@ -2526,6 +2526,9 @@ namespace SearchableSpinner.Droid
 			// aapt resource value: 0x7f070020
 			public static int text_nome = 2131165216;
 			
+			// aapt resource value: 0x7f070022
+			public static int text_not_found = 2131165218;
+			
 			// aapt resource value: 0x7f070021
 			public static int text_search_hint = 2131165217;
 			
