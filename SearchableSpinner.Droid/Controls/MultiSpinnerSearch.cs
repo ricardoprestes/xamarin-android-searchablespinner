@@ -38,7 +38,7 @@ namespace SearchableSpinner.Droid.Controls
                 spinnerText = DefaultText;
 
             ArrayAdapter<string> adapterSpinner = new ArrayAdapter<string>(Context, Resource.Layout.item_select_single, Resource.Id.txvItem, new string[] { spinnerText });
-            SetAdapter(adapterSpinner);
+            Adapter = adapterSpinner;
 
             if (ItemAdapter != null)
                 ItemAdapter.NotifyDataSetChanged();
@@ -65,7 +65,7 @@ namespace SearchableSpinner.Droid.Controls
                 spinnerText = DefaultText;
 
             ArrayAdapter<string> adapterSpinner = new ArrayAdapter<string>(Context, Resource.Layout.item_select_single, Resource.Id.txvItem, new string[] { DefaultText });
-            SetAdapter(adapterSpinner);
+            Adapter = adapterSpinner;
         }
 
         public void SetSelecteds(List<int> positions)
